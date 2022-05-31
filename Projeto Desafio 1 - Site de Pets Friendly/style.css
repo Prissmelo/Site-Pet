@@ -15,17 +15,28 @@ html{
 a{
     text-decoration: none;
 }
+
 img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
+
 p {
     font-size: 1.4rem;
     margin-top: 5px;
     line-height: 2.5rem;
     font-weight: 200;
     letter-spacing: 0.05rem;
+}
+
+h6 {
+    color: red;
+    font-size: 1.8rem;
+}
+
+h4{
+    font-size: 3rem; 
 }
 
 .container{
@@ -37,12 +48,15 @@ p {
    
     
 }
+
+/* Título do novo itens */
+
 .section-title {
     font-size: 5rem;
     font-weight: 100;
-    color: black;
+    color: #485563;
     margin-bottom: 4px;
-    margin-top: 1px;
+    margin-top: 0px;
     /*text-transform: uppercase; */
     letter-spacing: 0.1rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -138,6 +152,7 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
+    color: #485563;
     
 }
 
@@ -154,13 +169,16 @@ p {
 
 #portfolio .portfolio-header h1{
     margin-bottom: 50px;
+    color: #485563;
 }
+
 #portfolio .all-projects {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
 #portfolio .project-item{
     display:flex;
     align-items: center;
@@ -180,7 +198,7 @@ p {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(60deg, #5a10b5 0%, #002349 100%);
+    background-image: linear-gradient(60deg, #106e57 3%, #14d1b8 100%);
     color: white;
 }
 
@@ -269,14 +287,9 @@ p {
 }
 
 
-.container1 {
-    display:flex;
-    justify-content: center;
-    margin-top: 50px;
-    text-align: center;
-    
 
-}
+
+/* Título de categorias  */
 
 .titulo {
     text-align: center;
@@ -291,12 +304,23 @@ p {
    
     /*text-transform: uppercase; */
     letter-spacing: 0.2rem;
+    color: #485563;
     
     
     
 
 }
 
+/* Cads  de categorias  */
+
+.container1 {
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+    
+
+}
 .card {
     background: #002349;
     width: 400px;
@@ -396,14 +420,22 @@ p {
 
 }
 
+/* Navbar de navegação do site */
+
 .navbar li, a{
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    font-weight: 500;
    font-size: 20px;
-   color:rgb(36, 35, 33);
-   text-decoration: none;
-   background-color: rgba(255, 255, 255, 0);
+   color:rgb(231, 228, 221);
+   text-decoration:none; 
 
+   background-color: rgba(255, 255, 255, 0);
+   cursor: pointer;
+
+}
+
+.navbar li, a:hover {
+    color: rgb(26, 134, 134);
 }
 
 header {
@@ -439,7 +471,125 @@ header {
     transition: all 0.3s ease 0s;
 }
 
-.carrinho a{
-  color:chocolate
+/* Estilização do botão de Compras */
 
+.btn {
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  cursor:pointer;
+  transition: background .3s;
+  border-radius: 10px;       /* deixa o botão mais redondo */
+  background-color: rgb(189, 186, 15);
+  margin-top: 5px;
+  position: relative;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0px 7px 10px rgba(0, 0,0, 0.5);
+  
+  
+
+}
+
+/* Configuração do sobre nós   */
+
+.container2  pre {
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Configuração da imagem sobre nós   */
+
+.sobre img {
+   width: 20%;
+   height: 20%;
+   display: flex;
+   padding: 5px 10px 50px;
+   margin-left: 40%;
+   border-radius: 10%;
+
+}
+
+
+/* Parte do footer*/
+
+.footer{
+    position:relative;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background:linear-gradient(60deg, #106e57 3%, #14d1b8 100%);
+    height: auto;
+    width: 99vw;     /* tamanho do footer espaço que ocupa na tela do site*/
+    font-family: "Open Sans";
+    padding-top: 50px;
+    padding-bottom: 1px;
+    color: rgb(255, 253, 253);
+  
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+ 
+}
+  
+.footer-content h3{
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+  
+}
+  
+.footer-content p{
+    max-width: 800px;  /* tamanho do espaço da frase */
+    margin: 40px auto;
+    line-height: 30px;
+    font-size: 20px;
+  
+}
+  
+.socials{
+     list-style: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 1rem 0 3rem 0;
+  
+}
+  
+.socials li{
+     margin:0 10px;
+  
+}
+  
+.socials .logo{
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   width: 30%;    /* tamanho dos icons  */
+   height: 30%;
+}
+  
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+  
+}
+  
+.socials a:hover svg{
+    color: aqua;
+  
+}
+  
+
+
+.final p {
+    font-size: 1.7rem; /* tamanho da fonte */
 }
