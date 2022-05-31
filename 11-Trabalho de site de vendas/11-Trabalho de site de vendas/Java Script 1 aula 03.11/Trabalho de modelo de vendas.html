@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- Fazer uma página HTML como se fosse um modelo de venda de produtos.
+ É preciso fazer uso do que vimos hoje no bootstrap (bg,text,container,rows,cols).
+ É importante que possa ter botões para trabalhar com códigos JQuery,onde as informações podem ser visualizadas e escondidas conforme o botão é clicado.
+ Também pode ser trabalhado a questão do input type para trabalhar com descontonos preços. -->
+<html lang="pt-br">
+    <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+       <title> SQUAD 59 STORE</title>
+
+       <style>
+           body{
+               background-color: #CC2A49;
+               
+           }
+           h1 {
+               font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+               color: white;
+               
+             
+    
+           }
+       </style>
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script>
+           $(document).ready(function(){
+           $("button").click(function(){
+           $(".teste").hide();
+           });
+           });
+       </script>
+    </head>
+    <body>
+             <!--  Parte do Menu -->
+
+        <div class="container text-center">
+            <h1   ><b> SQUAD BOLOS</b></h1>
+            <h5> Venha deliciar nossos bolos quentinhos</h5>
+           <img src="" alt="">
+    
+        </div>
+    
+        <div style="background-color:#F36F38; width: 270px;" class="campo">
+            <h2 align=" center"><b>Sabores</b></h2>
+            <nav id= "menu">
+                <ul>
+                    <li><a href="#">Bolos Simples</a></li>
+                    <li><a href="#">Bolos Recheados</a></li>
+                    <li><a href="#">Bolos Decorados</a></li>
+                    <li><a href="#">Bolos de Festas</a></li>
+                    <li><a href="#">Bolos Caseiros</a></li>
+                </ul>
+            </nav>
+                 <input id="Comprar" type="button" value="25 reais"/>
+
+            </nav>
+        </div>
+
+        <!--  parte do Menu -->
+
+        <div>
+           <div class="container text-center">
+              <img src="C:\Users\Loreto\Desktop\111.jpg" style="width: 100; height: 100px;" align = "center">
+                <h5> Bolo de chocolate</h5>
+               <input id="Comprar" type="button" value="25 reais"/>
+            </div>
+        </div>
+
+        <h2 class="teste">Titulo do paragrafo</h2>
+        <p class="teste">Primeiro paragrafo</p>
+        <p>Segundo paragrafo</p>
+        <button>Clique aqui!</button>
+    </body>
+</html>
+
+
+  
+
+  
