@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Carrinho SQUAD</title>
+
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>   
+
+      <link rel="stylesheet" type="text/js" href="Trabalho de modelo de vendas.html">
+      <link rel="stylesheet" type="text/js" href="compra.html">
+      <link rel="stylesheet" type="text/js" href="carrinho.html">
+
+      <!-- JavaScript Bundle with Popper para funcionar o NavBar -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      <link rel="shortcut icon" href="cake.ico.ico" type="image/x-icon">
+
+      <style>
+           body{
+            background-color: rgb(187, 59, 80);
+          }
+
+          label {
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            color: white;
+          }
+        </style>
+    </head>
+    <body>
+
+        <script src="script.js"></script>
+
+      <!-- Parte superior de  links e pesquisa de Navegação -->
+
+     <!-- <nav class="navbar navbar-expand-lg navbar-light data-bs-target"> -->
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color:orange;">
+                <div class="container-fluid">
+    
+                    <img src="cake.ico.ico" alt="" width="40" height="30" class="d-inline-block align-text-top">
+                  <a class="navbar-brand" href="#">Cakes SQUAD 
+    
+                   </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Trabalho de modelo de vendas.html">Home</a>
+                      </li>
+    
+                      <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true"><b>
+                          Sabores
+                         </b></a>
+                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                             <li><a class="dropdown-item" href="#">Bolos Simples</a></li>
+                             <li><a class="dropdown-item" href="#">Bolos Recheados</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Bolos Decorados</a></li>
+                              <li><a class="dropdown-item" href="#">Bolos Caseiros</a></li>
+                           </ul>
+                        </li>
+    
+                      <li class="nav-item">
+                        <a class="nav-link" href="compra.html"><b>Cadastro</b></a>
+                      </li>
+    
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true"><b>
+                          kits de Festas
+                         </b></a>
+                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                             <li><a class="dropdown-item" href="#">Kit Simples</a></li>
+                             <li><a class="dropdown-item" href="#">Kit Médio</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                               <li><a class="dropdown-item" href="#">Kit Big Party</a></li>
+                            </ul>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><b>Enfeites</b></a>
+                          </li>
+    
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Pesquise aqui" aria-label="Search">
+                      <button class="btn btn-success" type="submit">Pesquisar</button>
+                    </form>
+                  </div>
+                </div>
+            </nav>
+    
+     <!-- Parte do carrinho de compras, mostrando imagem, pequeno texto, se o usuario quer adicionar algo e caixa de comentários -->
+
+              <div class="card mb-3">
+                <img src="chocolate.png" style="width: 10%;" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bolo de Chocolate</h5>
+                  <p class="card-text">Massa de chocolate, recheio de brigadeiro e cobertura de granulado.</p>
+                  <p class="card-text"><small class="text-muted">Se desejar outras coberturas, escolha nas opções abaixo.</small></p>
+
+                    <div class="input-group">
+                        <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                         <option selected ">Escolha a opção de outras coberturas</option>
+                         <option value="1">Nutella</option>
+                          <option value="2">Prestígio</option>
+                          <option value="3">Galak</option>
+                        </select>
+                        
+                        <button class="btn btn-info" type="button">Adicionado</button>
+                    </div>
+
+                  <div class="form-floating">
+                     <textarea class="form-control" placeholder="Escreva aqui comentários adicionais... ex: sem granulado, por favor" id="floatingTextarea2" style="height: 100px"></textarea>
+                     <label for="floatingTextarea2">Comments</label>
+                  </div>
+
+                 <a href="compra.html" class="btn btn-primary" role="button" data-bs-toggle="button">Aperte aqui para finalizar sua compra</a>
+                  <!-- <a href="compra.html" class="btn btn-primary stretched-link">Aperte aqui para finalizar sua compra</a> -->
+              
+                </div>
+
+               
+
+              </div>
+    </body>
+</html>
